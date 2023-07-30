@@ -6,7 +6,7 @@ const rule = require("./node_modules/eslint/lib/rules/strict");
 new RuleTester().run("strict", rule, {
   valid: [
     {
-      code: '"use strict";\nvar foo = true;',
+      code: '"use strict"; var foo = true;',
       options: ["global"],
     },
   ],
