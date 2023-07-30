@@ -4,7 +4,7 @@
   "description": "ESLint config that discourages use of obsolete, deprecated and legacy features",
   "main": "index.js",
   "scripts": {
-    "test": "eslint -c index.js ./fixtures"
+    "test": "for f in *.test.js; do node $f; done"
   },
   "repository": {
     "type": "git",
