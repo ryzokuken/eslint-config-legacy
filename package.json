@@ -4,7 +4,7 @@
   "description": "ESLint config that discourages use of obsolete, deprecated and legacy features",
   "main": "index.js",
   "scripts": {
-    "test": "for f in *.test.js; do node $f; done"
+    "test": "mocha *.test.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "eslintconfig"
   ],
   "devDependencies": {
-    "eslint": "^8.45.0"
+    "eslint": "^8.45.0",
+    "mocha": "^10.2.0"
   }
 }
